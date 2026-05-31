@@ -35,6 +35,7 @@ isInEditMode:boolean=false
         next:res=>{
           console.log(res);
           this.toodform.reset()
+          this._snackbar.openSnackBar(`The Todo ${add_obj.TodoItem} is added successfully!!!`)
         },
         error:err=>{
           console.log(err); 
